@@ -1,16 +1,14 @@
 {
+  "homepage": "https://devardin.github.io/scrabble-trainer",
   "name": "scrabble-trainer",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://devardin.github.io/scrabble-trainer",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "vite build",
-    "deploy": "gh-pages -d dist"
+    "start": "vite",
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^18.3.1",
